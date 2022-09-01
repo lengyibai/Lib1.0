@@ -36,7 +36,9 @@ module.exports = {
         },
       },
     ],
-    ["copy-code1", { hint: "复制成功！" }],
+    ["copy-code1", {
+      hint: "复制成功！"
+    }],
   ],
   themeConfig: {
     smoothScroll: true,
@@ -77,11 +79,15 @@ module.exports = {
       },
       {
         text: "JS函数库",
-        link: "/Function/ordinary/type",
+        link: "/Functions/ordinary/type",
       },
       {
         text: "CSS样式库",
         link: "/Styles/textGradient",
+      },
+      {
+        text: "Vue动画库",
+        link: "/Animates/TV",
       },
       {
         text: "Github",
@@ -89,8 +95,7 @@ module.exports = {
       },
     ],
     sidebar: {
-      "/Components/": [
-        {
+      "/Components/": [{
           title: "开发指南",
           collapsable: false,
           children: [
@@ -102,51 +107,52 @@ module.exports = {
           title: "静态组件",
           collapsable: false,
           children: [
-            ["static/Icon", "图标"],
-            ["static/Svg", "SVG变色图标"],
-            ["static/CommitBtn", "提交按钮"],
-            ["static/UpdateBtn", "更新按钮"],
-            ["static/DeleteBtn", "删除按钮"],
-            ["static/GridLayout", "Grid特色布局"],
-            ["static/GridNumber", "Grid数字模板布局"],
-            ["static/GridLetter", "Grid字母模板布局"],
-            ["static/FullScroll", "全屏滚动"],
-            ["static/Range", "滑动选择器"],
-            ["static/CircularProgress", "环形进度条"],
-            ["static/Video", "视频播放器"],
-            ["static/MaskClose", "顶部关闭蒙版"],
-            ["static/FlipBox", "卡片翻转"],
-            ["static/Mask", "蒙版"],
-            ["static/Loading", "loading"],
-            ["static/Iframe", "iframe"],
-            ["static/QrCode", "生成二维码"],
-            ["static/Scroll", "移动端滚动插件"],
-            ["static/Swiper", "Swiper轮播图"],
-            ["static/Echarts", "Echarts图表"],
+            ["statics/Icon", "图标"],
+            ["statics/Svg", "SVG变色图标"],
+            ["statics/CommitBtn", "提交按钮"],
+            ["statics/UpdateBtn", "更新按钮"],
+            ["statics/DeleteBtn", "删除按钮"],
+            ["statics/GridLayout", "Grid特色布局"],
+            ["statics/GridNumber", "Grid数字模板布局"],
+            ["statics/GridLetter", "Grid字母模板布局"],
+            ["statics/FullScroll", "全屏滚动"],
+            ["statics/Range", "滑动选择器"],
+            ["statics/CircularProgress", "环形进度条"],
+            ["statics/Video", "视频播放器"],
+            ["statics/MaskClose", "顶部关闭蒙版"],
+            ["statics/FlipBox", "卡片翻转"],
+            ["statics/Mask", "蒙版"],
+            ["statics/Loading", "loading"],
+            ["statics/Iframe", "iframe"],
+            ["statics/QrCode", "生成二维码"],
+            ["statics/Scroll", "移动端滚动插件"],
+            ["statics/Swiper", "Swiper轮播图"],
+            ["statics/Echarts", "Echarts图表"],
           ],
         },
         {
           title: "动态组件",
           collapsable: false,
           children: [
-            ["dynamic/DragSort", "拖拽排序"],
-            ["dynamic/ScrollInto", "滚动入场动画"],
-            ["dynamic/ScrollFollow", "滚动跟随动画"],
-            ["dynamic/PdrPul", "上拉加载下拉刷新"],
-            ["dynamic/UploadFile", "文件上传"],
-            ["dynamic/UploadImg", "图片上传"],
-            ["dynamic/Table", "表格"],
-            ["dynamic/RichText", "富文本编辑器"],
-            ["dynamic/ValidationCountdown", "获取验证码按钮"],
-            ["dynamic/SelectAddress", "省市区"],
+            ["dynamics/DragSort", "拖拽排序"],
+            ["dynamics/ScrollInto", "滚动入场动画"],
+            ["dynamics/ScrollFollow", "滚动跟随动画"],
+            ["dynamics/PdrPul", "上拉加载下拉刷新"],
+            ["dynamics/UploadFile", "文件上传"],
+            ["dynamics/UploadImg", "图片上传"],
+            ["dynamics/Table", "表格"],
+            ["dynamics/RichText", "富文本编辑器"],
+            ["dynamics/ValidationCountdown", "获取验证码按钮"],
+            ["dynamics/SelectAddress", "省市区"],
           ],
         },
       ],
-      "/Directives/": [
-        {
+      "/Directives/": [{
           title: "开发指南",
           collapsable: false,
-          children: [["base/start", "快速开始"]],
+          children: [
+            ["base/start", "快速开始"]
+          ],
         },
         {
           title: "自定义指令",
@@ -168,8 +174,7 @@ module.exports = {
           ],
         },
       ],
-      "/Function/": [
-        {
+      "/Functions/": [{
           title: "基础",
           collapsable: false,
           children: [
@@ -213,11 +218,12 @@ module.exports = {
           ],
         },
       ],
-      "/Directives/": [
-        {
+      "/Directives/": [{
           title: "开发指南",
           collapsable: false,
-          children: [["base/start", "快速开始"]],
+          children: [
+            ["base/start", "快速开始"]
+          ],
         },
         {
           title: "自定义指令",
@@ -239,17 +245,22 @@ module.exports = {
           ],
         },
       ],
-      "/Styles/": [
-        {
-          title: "基础",
-          collapsable: false,
-          children: [
-            ["textGradient", "文字渐变"],
-            ["cursor", "鼠标样式"],
-            ["ellipsis", "文字溢出省略号"],
-          ],
-        },
-      ],
+      "/Styles/": [{
+        title: "基础",
+        collapsable: false,
+        children: [
+          ["textGradient", "文字渐变"],
+          ["cursor", "鼠标样式"],
+          ["ellipsis", "文字溢出省略号"],
+        ],
+      }, ],
+      "/Animates/": [{
+        title: "基础",
+        collapsable: false,
+        children: [
+          ["TV", "电视开关屏"],
+        ],
+      }, ],
     },
   },
 };

@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[119],{763:function(n,t,e){n.exports=e.p+"assets/img/icon.58c82a6c.png"},990:function(n,t,e){"use strict";e.r(t);var o=e(20),s=Object(o.a)({},(function(){return(0,this._self._c)("Static-QrCode-index",{attrs:{text:"Hello World!",icon:e(763),size:"25vw"}})}),[],!1,null,null,null);t.default=s.exports}}]);

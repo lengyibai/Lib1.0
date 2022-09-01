@@ -35,7 +35,7 @@ export default {
   }
   .desc {
     color: #34495e;
-    font-size: 15px;
+    font-size: 16px;
     p {
       margin: 0;
     }

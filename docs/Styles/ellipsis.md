@@ -22,6 +22,7 @@
 .Ellipsis {
   position: relative;
   div {
+    // display: flex; //注：flex布局会使其失效
     width: 20vw;
     font-size: 3vw;
   }
