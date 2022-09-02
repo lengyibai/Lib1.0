@@ -35,7 +35,6 @@ export default {
           border-collapse: collapse;
         `;
         [...el.querySelectorAll("td")].forEach((item, index) => {
-          if (value[2]) item.style.border = "1px solid red";
           item.style.wordBreak = "break-all";
           item.style.textAlign = index % 2 ? value[1] : value[0];
         });
