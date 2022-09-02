@@ -2,7 +2,7 @@
 
 <ContainerBox title="介绍">
 ::: slot desc
-查看图片
+简易的点击查看图片功能
 :::
 </ContainerBox>
 
@@ -18,12 +18,16 @@
 
 <ContainerBox title="基础用法">
 ::: slot desc
-必须加绝对定位才能拖动
+给需要查看图片的父盒子设置自定义指令
+:::
+
+
+::: tip
+只要点击的元素是`img`标签，就会触发查看图片，确保你的图片没有设置额外的点击事件
 :::
 <div class="demoBox">
 <Directives-ViewImg-index />
 </div>
-
 <ShowCode>
 ::: slot codes
 ```vue
