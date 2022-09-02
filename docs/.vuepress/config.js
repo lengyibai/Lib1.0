@@ -147,33 +147,6 @@ module.exports = {
           ],
         },
       ],
-      "/Directives/": [{
-          title: "开发指南",
-          collapsable: false,
-          children: [
-            ["base/start", "快速开始"]
-          ],
-        },
-        {
-          title: "自定义指令",
-          collapsable: false,
-          children: [
-            ["WaveDiffuse", "水波扩散"],
-            ["TextHoverColor", "文字悬浮变色"],
-            ["TypewriterSingle", "打字机(单行)"],
-            ["TypewriterMultiple", "打字机(多行)"],
-            ["Particle", "粒子效果"],
-            ["SnowFalling", "雪花飘落"],
-            ["ParallaxVideo", "视频视差背景"],
-            ["ParallaxImg", "图片视差背景"],
-            ["SweepLight", "卡片扫光"],
-            ["DownDrag", "按下拖动"],
-            ["MaskGradient", "渐变蒙版"],
-            ["TableLayout", "表格经典布局"],
-            ["DragFile", "文件拖拽解析"],
-          ],
-        },
-      ],
       "/Functions/": [{
           title: "基础",
           collapsable: false,
@@ -242,6 +215,7 @@ module.exports = {
             ["MaskGradient", "渐变蒙版"],
             ["TableLayout", "表格经典布局"],
             ["DragFile", "文件拖拽解析"],
+            ["ViewImg", "查看图片"],
           ],
         },
       ],
