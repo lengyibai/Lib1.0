@@ -47,7 +47,7 @@ export default {
 :::
 </ShowCode>
 
-<ShowCode>
+<ShowCode iskey>
 ::: slot codes
 ```js
 const waveDiffuse = {

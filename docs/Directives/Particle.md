@@ -40,7 +40,7 @@ export default {
 :::
 </ShowCode>
 
-<ShowCode>
+<ShowCode iskey>
 ::: slot codes
 ```js
 function $random(min, max, num = 0) {

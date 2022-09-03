@@ -33,19 +33,6 @@
 <ShowCode>
 ::: slot codes
 ```js
-export function $imageOptimizer(e){function t(e,t){let n=e.split(","),i=n[0].match(/:(.*?);/)[1],o=atob(n[1]),a=o.length,l=new Uint8Array(a);for(;a--;)l[a]=o.charCodeAt(a);return new File([l],t,{type:i})}function n(e){const t=new FormData;return t.append("file",e),t}const i=document.createElement("canvas");i.classList.add("imageOptimizer"),document.body.appendChild(i);const o=document.querySelector(".imageOptimizer");let a="",l="",r="",c=e.ratio||1,d=e.maxsize||1024,h=e.width||1e4;if(e.el||e.file){a=e.el&&e.el.files[0]||e.file,r=a.name;let i=new FileReader;i.readAsDataURL(a);let s=new Promise(function(e,t){i.onload=function(t){e(t)},i.onerror=function(e){t(e)}});s.then(i=>{let a=i.target.result;if(i.total/1024>d){let i=new Promise(function(e,t){let n=new Image;n.src=a,n.onload=function(){e(n)},n.onerror=function(e){t(e)}});i.then(i=>{let a=document.querySelector("canvas"),d=a.getContext("2d"),s=h/i.width;s<1?(a.width=i.width*s,a.height=i.height*s,d.drawImage(i,0,0,i.width*s,i.height*s)):(a.width=i.width,a.height=i.height,d.drawImage(i,0,0,i.width,i.height));let m=a.toDataURL("image/jpeg",c);l=m;let u=t(l,r);e.success(n(u),u,l),o.remove()},e=>{console.log(e)})}else{let i=t(a,r);e.success(n(i),i,a),o.remove()}},e=>{console.log(e)})}}
-```
-:::
-</ShowCode>
-</ContainerBox>
-
-<ContainerBox title="未压缩">
-::: slot desc
-可以修改源码扩展功能一下
-:::
-<ShowCode>
-::: slot codes
-```js
 export function $imageOptimizer(obj) {
   // 先判断Dom树是否存在上次创建的canvas
   const c1 = document.createElement("canvas");

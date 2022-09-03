@@ -42,7 +42,7 @@
 :::
 </ShowCode>
 
-<ShowCode>
+<ShowCode iskey>
 ::: slot codes
 ```js
 const typewriterMultiple = {

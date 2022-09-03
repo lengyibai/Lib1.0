@@ -32,7 +32,7 @@
 :::
 </ShowCode>
 
-<ShowCode>
+<ShowCode iskey>
 ::: slot codes
 
 ```css

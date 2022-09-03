@@ -169,7 +169,7 @@ export default {
 <Dynamics-PdrPul-demo-index-b />
 </div>
 
-<ShowCode>
+<ShowCode iskey>
 ::: slot codes
 ```vue
 <!-- 单选多tab栏 -->

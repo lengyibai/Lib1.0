@@ -43,7 +43,7 @@
 :::
 </ShowCode>
 
-<ShowCode>
+<ShowCode iskey>
 ::: slot codes
 ```js
 textHoverColor: {

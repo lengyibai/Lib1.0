@@ -26,7 +26,7 @@
         :style="{
           color: icon_color,
         }"
-        >{{ text }}代码</span
+        >{{ text }}{{ iskey ? "关键代码" : "源码" }}</span
       >
     </div>
   </div>
@@ -35,11 +35,17 @@
 import icon from "../assets/icon/icon.js";
 export default {
   name: "ShowCode",
+  props: {
+    iskey: {
+      type: Boolean,
+      default: false,
+    },
+  },
   data() {
     this.icon = icon;
     return {
       show: true,
-      text: "显示",
+      text: "查看",
       icon_color: "#58727e",
     };
   },
@@ -66,7 +72,7 @@ export default {
   methods: {
     showCode() {
       this.show = !this.show;
-      this.text = this.show ? "显示" : "隐藏";
+      this.text = this.show ? "查看" : "隐藏";
     },
 
     enter(flag) {

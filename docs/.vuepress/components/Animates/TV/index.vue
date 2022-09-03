@@ -1,7 +1,13 @@
 <template>
   <div class="demo">
     <transition name="tv">
-      <div class="TV" v-show="show"></div>
+      <div class="TV" v-show="show">
+        <transition name="fade">
+          <div class="box" v-show="box_show">
+            <h1>Hello World!</h1>
+          </div>
+        </transition>
+      </div>
     </transition>
   </div>
 </template>
@@ -11,25 +17,56 @@ export default {
   data() {
     return {
       show: false,
+      box_show: false,
     };
   },
   mounted() {
+    this.show = true;
+    setTimeout(() => {
+      this.box_show = true;
+    }, 1000);
+
     setInterval(() => {
       this.show = !this.show;
+      setTimeout(() => {
+        this.box_show = !this.box_show;
+      }, 1000);
     }, 2000);
   },
 };
 </script>
 <style scoped lang="less">
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .demo {
   position: relative;
   width: 100%;
   height: 50vh;
   .TV {
+    .flex();
     width: 100%;
     height: 100%;
     background-color: #333;
+    .box {
+      .flex();
+      h1 {
+        font-size: 5vw;
+        color: #fff;
+      }
+    }
   }
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
+.fade-leave-active,
+.fade-enter-active {
+  transition: all 0.5s;
 }
 
 /* 蒙版裁剪 */
