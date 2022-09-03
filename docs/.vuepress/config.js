@@ -237,6 +237,7 @@ module.exports = {
           ["Burqas", "掀"],
           ["Fold", "折"],
           ["Deploy", "展"],
+          ["Spin", "旋"],
         ],
       }],
     },

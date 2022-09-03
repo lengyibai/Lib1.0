@@ -48,7 +48,7 @@ export default {
     .flex();
     width: 100%;
     height: 100%;
-    background-color: #333;
+    background-color: #1a1a1a;
     .box {
       .flex();
       h1 {

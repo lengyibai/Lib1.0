@@ -52,7 +52,7 @@
 .content {
   width: 100%;
   height: calc(100% - 50px);
-  background-color: #333;
+  background-color: #1a1a1a;
   cursor: initial;
   display: flex;
   justify-content: center;
