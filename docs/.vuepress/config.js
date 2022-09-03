@@ -232,9 +232,13 @@ module.exports = {
         title: "基础",
         collapsable: false,
         children: [
-          ["TV", "电视开关屏"],
+          ["TV", "电视"],
+          ["Round", "圆"],
+          ["Burqas", "掀"],
+          ["Fold", "折"],
+          ["Deploy", "展"],
         ],
-      }, ],
+      }],
     },
   },
 };

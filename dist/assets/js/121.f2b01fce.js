@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[121],{1e3:function(t,e,n){"use strict";n.r(e);var s=n(20),i=Object(s.a)({},(function(){return(0,this._self._c)("Statics-Video-index",{attrs:{url:n(777)}})}),[],!1,null,null,null);e.default=i.exports},777:function(t,e,n){t.exports=n.p+"assets/media/video.4db3c3c9.mp4"}}]);

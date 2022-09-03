@@ -3,8 +3,8 @@
     <component
       :is="
         toggle
-          ? 'Dynamic-DragSort-DragSortDown'
-          : 'Dynamic-DragSort-DragSortMove'
+          ? 'Dynamics-DragSort-DragSortDown'
+          : 'Dynamics-DragSort-DragSortMove'
       "
       :data="imgs"
       @sort-data="sort"

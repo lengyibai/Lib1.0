@@ -15,7 +15,7 @@
   <input type="file" accept=".xls, .xlsx" @change="$excToObj" />
 </template>
 <script>
-  import { $excToObj } from "./lyb.js";
+  import { $excToObj } from "./lib.js";
   export default {
     methods: {
       $excToObj(e) {

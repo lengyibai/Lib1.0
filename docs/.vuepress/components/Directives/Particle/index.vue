@@ -55,14 +55,6 @@ export default {
             }, time * 1000);
           }, 50);
         }, 50);
-        el.addEventListener("mouseenter", () => {
-          el.style.filter = `brightness(${brightness * 100}%) contrast(${
-            contrast * 100
-          }%)`;
-        });
-        el.addEventListener("mouseleave", () => {
-          el.style.filter = "";
-        });
       },
       unbind() {
         clearInterval(particle_timer);

@@ -7,7 +7,7 @@
       <template #back>
         <div class="box flex">鼠标移出去</div>
       </template>
-    </Static-FlipBox-index>
+    </Statics-FlipBox-index>
   </div>
 </template>
 <style scoped>

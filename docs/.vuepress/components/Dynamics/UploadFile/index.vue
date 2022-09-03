@@ -1,5 +1,5 @@
 <template>
-  <div class="lyb-upload-multiple">
+  <div class="lib-upload-multiple">
     <transition-group class="index" name="del">
       <!-- 图片列表 -->
       <div
@@ -107,7 +107,7 @@
 </template>
 <script>
 import axios from "axios";
-import { $getFileSuf, $fmtByte, $urlFileType } from "./lyb.js";
+import { $getFileSuf, $fmtByte, $urlFileType } from "./lib.js";
 export default {
   name: "LibUploadFile",
   props: {
@@ -492,7 +492,7 @@ export default {
 };
 </script>
 <style lang="less" scoped>
-.lyb-upload-multiple,
+.lib-upload-multiple,
 .index {
   display: flex;
   flex-wrap: wrap;

@@ -9,7 +9,7 @@
 <ContainerBox title="下载并引入">
 ::: slot desc
 
-[下载组件包](https://gitee.com/lengyibai/component-package/raw/master/ValidationCountdown.zip)
+[下载组件包](https://gitee.com/lengyibai/component-package/raw/master/LibValidationCountdown.zip)
 
 引入参考 [引入组件](/Components/Base/start.html#引入组件)
 
@@ -45,7 +45,7 @@
           {{ text }}
         </button>
       </template>
-    </Dynamic-ValidationCountdown-index>
+    </Dynamics-ValidationCountdown-index>
   </div>
 </template>
 <script>

@@ -18,6 +18,7 @@
 </template>
 <script>
 export default {
+  name: "LibDragSortDown",
   props: {
     data: {
       type: Array,
@@ -30,7 +31,6 @@ export default {
       default: "id",
     },
   },
-  name: "LibDragSortDown",
   data() {
     return {
       arr: [],

@@ -13,7 +13,7 @@
       :key="index"
     >
       {{ index }}
-    </Static-GridNumber-index>
+    </Statics-GridNumber-index>
   </transition-group>
 </template>
 <script>

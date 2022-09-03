@@ -53,29 +53,29 @@
 ```js
 const typewriterSingle = {
   inserted(el) {
-    let lyb = el;
+    let lib = el;
     let cursor_timer; //光标计时器，需要被其它函数调用，所以声明在全局作用域
 
     function cursor() {
       clearInterval(cursor_timer); //调用前清除光标计时器
       cursor_timer = setInterval(() => {
-        lyb.classList.toggle("cursor"); //光标闪烁
+        lib.classList.toggle("cursor"); //光标闪烁
       }, 500);
     }
 
-    let say = lyb.innerHTML;
+    let say = lib.innerHTML;
     function again() {
-      lyb.innerHTML = "";
+      lib.innerHTML = "";
       let timer;
       let says = say; //用于删除
       let num = 0, //用于累加遍历字符串
         text = ""; //用于输出在屏幕上
-      lyb.innerHTML = "";
+      lib.innerHTML = "";
       timer = setInterval(() => {
         clearInterval(cursor_timer); //禁止光标闪烁
-        lyb.classList.add("cursor");
+        lib.classList.add("cursor");
         text += say[num]; //遍历输出的文字
-        lyb.innerHTML = text; //输出在屏幕上
+        lib.innerHTML = text; //输出在屏幕上
         num++;
 
         if (num === say.length) {
@@ -88,7 +88,7 @@ const typewriterSingle = {
             let delText_timer = setInterval(() => {
               //开始调用删除文字的计时器
               says = says.substr(0, says.length - 1); //逐个清除末尾文字
-              lyb.innerHTML = says; //每次删除一个字，输出在屏幕上
+              lib.innerHTML = says; //每次删除一个字，输出在屏幕上
               if (says.length <= 0) {
                 //如果删除完毕
                 clearInterval(delText_timer); //清除用于删除文字的计时器

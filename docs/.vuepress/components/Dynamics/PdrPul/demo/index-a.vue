@@ -11,13 +11,12 @@
       <div class="list" v-for="(item, index) in data" :key="index" ref="card">
         {{ item.slice(0, 10) }}...
       </div>
-    </Dynamic-PdrPul-index>
+    </Dynamics-PdrPul-index>
   </div>
 </template>
 <script>
 import axios from "axios";
 export default {
-  name: "demo",
   data() {
     return {
       data: [],

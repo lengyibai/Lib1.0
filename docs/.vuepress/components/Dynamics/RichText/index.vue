@@ -32,7 +32,7 @@ export default {
       default: "",
     },
   },
-  name: "LybRichText",
+  name: "LibRichText",
   data() {
     return {
       contentText: "",

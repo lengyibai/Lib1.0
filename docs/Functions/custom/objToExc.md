@@ -15,7 +15,7 @@
   <button @click="$objToExc">点击导出</button>
 </template>
 <script>
-  import { $objToExc } from "./lyb.js";
+  import { $objToExc } from "./lib.js";
   export default {
     data() {
       return {

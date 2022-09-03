@@ -17,23 +17,22 @@
       <template v-slot:body="{ data }">
         <Dynamics-Table-TableColumn min-width="100">{{
           data.date
-        }}</Dynamic-Table-TableColumn>
+        }}</Dynamics-Table-TableColumn>
         <Dynamics-Table-TableColumn min-width="100">{{
           data.name
-        }}</Dynamic-Table-TableColumn>
+        }}</Dynamics-Table-TableColumn>
         <Dynamics-Table-TableColumn min-width="100">{{
           data.address
-        }}</Dynamic-Table-TableColumn>
+        }}</Dynamics-Table-TableColumn>
         <Dynamics-Table-TableColumn min-width="100">
           <button>冻结</button>
-        </Dynamic-Table-TableColumn>
+        </Dynamics-Table-TableColumn>
       </template>
-    </Dynamic-Table-index>
+    </Dynamics-Table-index>
   </div>
 </template>
 <script>
 export default {
-  name: "demo",
   data() {
     return {
       tableData: [

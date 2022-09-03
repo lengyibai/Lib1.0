@@ -11,7 +11,7 @@
       <span>进度“饼”</span>
       <br />
       <span>{{ `${(num * 100).toFixed(2)}%` }}</span>
-    </Static-CircularProgress-index>
+    </Statics-CircularProgress-index>
   </div>
 </template>
 <script>

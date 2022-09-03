@@ -13,7 +13,6 @@
 </template>
 <script>
 export default {
-  name: "TV",
   data() {
     return {
       show: false,
@@ -69,7 +68,6 @@ export default {
   transition: all 0.5s;
 }
 
-/* 蒙版裁剪 */
 .tv-enter-active {
   animation: tv-in 1s;
 }

@@ -17,50 +17,49 @@
       <h1>由父组件决定<br />(左上角输入框)</h1>
       <Dynamics-ScrollInto-IntoBox-index>
         <div class="box a"></div>
-      </Dynamic-ScrollInto-IntoBox-index>
+      </Dynamics-ScrollInto-IntoBox-index>
 
       <h1>从小到大</h1>
       <Dynamics-ScrollInto-IntoBox-index
         :animate="{ name: 'scale1', time: 0.5, into: 0.25 }"
       >
         <div class="box b"></div>
-      </Dynamic-ScrollInto-IntoBox-index>
+      </Dynamics-ScrollInto-IntoBox-index>
 
       <h1>从大到小</h1>
       <Dynamics-ScrollInto-IntoBox-index
         :animate="{ name: 'scale2', time: 0.5, into: 0.5 }"
       >
         <div class="box c"></div>
-      </Dynamic-ScrollInto-IntoBox-index>
+      </Dynamics-ScrollInto-IntoBox-index>
 
       <h1>从左到右顺时针</h1>
       <Dynamics-ScrollInto-IntoBox-index
         :animate="{ name: 'mixedTR5', time: 0.5, into: 0.75 }"
       >
         <div class="box d"></div>
-      </Dynamic-ScrollInto-IntoBox-index>
+      </Dynamics-ScrollInto-IntoBox-index>
 
       <h1>从右到左逆时针</h1>
       <Dynamics-ScrollInto-IntoBox-index
         :animate="{ name: 'mixedTR6', time: 0.5, into: 1 }"
       >
         <div class="box e"></div>
-      </Dynamic-ScrollInto-IntoBox-index>
+      </Dynamics-ScrollInto-IntoBox-index>
 
       <h1>自定义动画</h1>
       <Dynamics-ScrollInto-IntoBox-index
         :animate="{ name: animate, time: 3, into: 2 }"
       >
         <div class="box f"></div>
-      </Dynamic-ScrollInto-IntoBox-index>
+      </Dynamics-ScrollInto-IntoBox-index>
 
       <div class="fill"></div>
-    </Dynamic-ScrollInto-index>
+    </Dynamics-ScrollInto-index>
   </div>
 </template>
 <script>
 export default {
-  name: "demo",
   data() {
     return {
       name: "translate4",

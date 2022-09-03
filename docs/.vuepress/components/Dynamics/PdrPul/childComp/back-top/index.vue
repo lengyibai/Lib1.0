@@ -10,7 +10,6 @@
 </template>
 <script>
 export default {
-  name: "lybBackTop",
   props: {
     //更换返回顶部图标，引入本地图片方式要使用require，和下面一致
     imgUrl: {

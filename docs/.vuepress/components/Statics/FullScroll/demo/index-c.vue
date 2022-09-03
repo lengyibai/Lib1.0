@@ -4,7 +4,7 @@
       <div class="scroll-item" v-for="(item, index) in 10" :key="index">
         {{ item }}
       </div>
-    </Static-FullScroll-index>
+    </Statics-FullScroll-index>
   </div>
 </template>
 <script>
@@ -16,10 +16,10 @@ export default {
   },
   methods: {
     start(i) {
-      alert(`开始滚动回调，当前第${i}页`);
+      console.warn(`开始滚动回调，当前第${i}页`);
     },
     end(i) {
-      alert(`结束滚动回调，当前第${i}页`);
+      console.warn(`结束滚动回调，当前第${i}页`);
     },
   },
 };

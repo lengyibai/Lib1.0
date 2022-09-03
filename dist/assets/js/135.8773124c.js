@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[135],{880:function(s,e,n){"use strict";n.r(e);var t={methods:{close(){alert("关闭回调")}}},l=n(20),o=Object(l.a)(t,(function(){var s=this._self._c;return s("div",[s("Statics-MaskClose-index",{on:{close:this.close}})],1)}),[],!1,null,null,null);e.default=o.exports}}]);

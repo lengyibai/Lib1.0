@@ -58,7 +58,6 @@
 <script>
 import axios from "axios";
 export default {
-  name: "demo",
   data() {
     return {
       data: [],

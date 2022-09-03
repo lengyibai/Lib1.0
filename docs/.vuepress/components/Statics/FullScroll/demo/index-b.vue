@@ -4,7 +4,7 @@
       <div class="scroll-item" v-for="(item, index) in 10" :key="index">
         {{ item }}
       </div>
-    </Static-FullScroll-index>
+    </Statics-FullScroll-index>
   </div>
 </template>
 <style scoped>

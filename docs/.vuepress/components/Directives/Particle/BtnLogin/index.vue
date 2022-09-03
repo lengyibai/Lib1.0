@@ -4,11 +4,6 @@
     <span>LOGIN</span>
   </div>
 </template>
-<script>
-export default {
-  name: "BtnLogin",
-};
-</script>
 <style scoped lang="less">
 .BtnLogin {
   position: relative;

@@ -22,15 +22,15 @@
     <div class="slide" ref="slide">
       <Dynamics-PdrPul-demo-index-a
         class="slide-item"
-      ></Dynamic-PdrPul-demo-index-a>
+      ></Dynamics-PdrPul-demo-index-a>
       <Dynamics-PdrPul-demo-index-a
         class="slide-item"
         v-if="cache[1]"
-      ></Dynamic-PdrPul-demo-index-a>
+      ></Dynamics-PdrPul-demo-index-a>
       <Dynamics-PdrPul-demo-index-a
         class="slide-item"
         v-if="cache[2]"
-      ></Dynamic-PdrPul-demo-index-a>
+      ></Dynamics-PdrPul-demo-index-a>
     </div>
   </div>
 </template>

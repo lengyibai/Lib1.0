@@ -2,7 +2,7 @@
   <div class="grid">
     <Statics-GridLayout-index gap="10px" :count="3" :eqhMultiple="0.5">
       <div class="box" v-for="item in 8" :key="item" />
-    </Static-GridLayout-index>
+    </Statics-GridLayout-index>
   </div>
 </template>
 <style scoped>

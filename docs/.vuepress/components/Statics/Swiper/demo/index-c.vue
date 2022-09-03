@@ -11,7 +11,7 @@
       <div class="swiper-slide">
         <Statics-Echarts-demo-index-c />
       </div>
-    </Static-Swiper-index>
+    </Statics-Swiper-index>
   </div>
 </template>
 <style scoped>

@@ -92,7 +92,7 @@
       <div class="swiper-slide">
         <img src="./img/5.png" alt />
       </div>
-    </Static-Swiper-index>
+    </Statics-Swiper-index>
   </div>
 </template>
 <script>
@@ -151,7 +151,7 @@ img {
       <div class="swiper-slide">
         <Statics-Echarts-demo-index-c />
       </div>
-    </Static-Swiper-index>
+    </Statics-Swiper-index>
   </div>
 </template>
 <style scoped>

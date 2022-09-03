@@ -66,9 +66,9 @@ setInterval(
 在函数内使用
 :::
 ```js
-const lyb = $debounce(fn, 1000);
+const lib = $debounce(fn, 1000);
 setInterval(() => {
-  lyb();
+  lib();
 }, 100);
 ```
 </ContainerBox>
@@ -81,15 +81,15 @@ setInterval(() => {
 export default {
   data() {
     return {
-      lyb: null,
+      lib: null,
     };
   },
   created() {
-    lyb = $throttle(function () {}.bind(this), 250);
+    lib = $throttle(function () {}.bind(this), 250);
   },
   mounted() {
     setInterval(() => {
-      lyb();
+      lib();
     }, 100);
   },
 };

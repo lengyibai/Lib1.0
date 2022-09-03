@@ -10,7 +10,7 @@
           {{ text }}
         </button>
       </template>
-    </Dynamic-ValidationCountdown-index>
+    </Dynamics-ValidationCountdown-index>
   </div>
 </template>
 <script>

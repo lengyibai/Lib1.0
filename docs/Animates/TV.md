@@ -24,7 +24,6 @@
 </template>
 <script>
 export default {
-  name: "TV",
   data() {
     return {
       show: false,

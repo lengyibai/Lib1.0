@@ -3,7 +3,7 @@
     <button @click="show = true">点击显示</button>
     <Statics-Mask-index v-model="show">
       <h1>这是一个蒙版，点击除这里以外的位置会关闭</h1>
-    </Static-Mask-index>
+    </Statics-Mask-index>
   </div>
 </template>
 <script>

@@ -107,10 +107,10 @@ export default {
   },
   methods: {
     start(i) {
-      alert(`开始滚动回调，当前第${i}页`);
+      console.warn(`开始滚动回调，当前第${i}页`);
     },
     end(i) {
-      alert(`结束滚动回调，当前第${i}页`);
+      console.warn(`结束滚动回调，当前第${i}页`);
     },
   },
 };

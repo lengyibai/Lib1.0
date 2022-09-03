@@ -7,7 +7,7 @@
       :key="index"
     >
       {{ item }}
-    </Static-GridLetter-index>
+    </Statics-GridLetter-index>
   </div>
 </template>
 <script>

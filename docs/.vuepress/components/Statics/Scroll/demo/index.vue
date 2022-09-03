@@ -4,7 +4,7 @@
       <div class="content">
         <h1 v-for="(item, index) in 50" :key="index">{{ item }}</h1>
       </div>
-    </Static-Scroll-index>
+    </Statics-Scroll-index>
   </div>
 </template>
 <style scoped lang="less">
