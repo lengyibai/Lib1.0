@@ -226,6 +226,7 @@ module.exports = {
           ["textGradient", "文字渐变"],
           ["cursor", "鼠标样式"],
           ["ellipsis", "文字溢出省略号"],
+          ["maskCollection", "遮罩层合集"],
         ],
       }, ],
       "/Animates/": [{

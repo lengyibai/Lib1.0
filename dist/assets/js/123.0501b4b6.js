@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[123],{1025:function(n,t,e){"use strict";e.r(t);e(695);var s=e(20),c=Object(s.a)({},(function(){return(0,this._self._c)("div",{staticClass:"demo edge"})}),[],!1,null,"5e440b9a",null);t.default=c.exports},473:function(n,t,e){},695:function(n,t,e){"use strict";e(473)}}]);
