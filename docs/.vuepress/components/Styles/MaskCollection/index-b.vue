@@ -7,9 +7,9 @@
 .demo {
   position: relative;
   width: 100%;
-  height: 50vh;
+  height: 75vh;
   background: url("http://lengyibai.gitee.io/img-bed/img/bg.jpg") no-repeat
-    center -25px;
+    center;
   background-size: cover;
 }
 

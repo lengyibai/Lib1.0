@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[121],{1024:function(n,t,s){"use strict";s.r(t);s(694);var i=s(20),c=Object(i.a)({},(function(){return(0,this._self._c)("div",{staticClass:"demo halation"})}),[],!1,null,"74e282a4",null);t.default=c.exports},472:function(n,t,s){},694:function(n,t,s){"use strict";s(472)}}]);
