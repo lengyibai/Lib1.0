@@ -1,22 +1,22 @@
 <template>
   <div class="Home">
     <h2>热门组件推荐</h2>
-    <a href="/Components/dynamics/Parallax"><h3>视差动画<span v-html="icon"></span></h3></a>
-    <a href="/Components/dynamics/ScrollInto"><h3>滚动入场动画<span v-html="icon"></span></h3></a>
-    <a href="/Components/dynamics/ScrollFollow"><h3>滚动跟随动画<span v-html="icon"></span></h3></a>
+    <a href="/lib-components/Components/dynamics/Parallax"><h3>视差动画<span v-html="icon"></span></h3></a>
+    <a href="/lib-components/Components/dynamics/ScrollInto"><h3>滚动入场动画<span v-html="icon"></span></h3></a>
+    <a href="/lib-components/Components/dynamics/ScrollFollow"><h3>滚动跟随动画<span v-html="icon"></span></h3></a>
 
     <h2>热门指令推荐</h2>
-    <a href="/Directives/WaveDiffuse"><h3>水波动画<span v-html="icon"></span></h3></a>
-    <a href="/Directives/TypewriterMultiple"><h3>打字机(多行)<span v-html="icon"></span></h3></a>
-    <a href="/Directives/ViewImg"><h3>查看图片<span v-html="icon"></span></h3></a>
+    <a href="/lib-components/Directives/WaveDiffuse"><h3>水波动画<span v-html="icon"></span></h3></a>
+    <a href="/lib-components/Directives/TypewriterMultiple"><h3>打字机(多行)<span v-html="icon"></span></h3></a>
+    <a href="/lib-components/Directives/ViewImg"><h3>查看图片<span v-html="icon"></span></h3></a>
 
     <h2>热门函数推荐</h2>
-    <a href="/Functions/custom/imageOptimizer"><h3>图片压缩<span v-html="icon"></span></h3></a>
-    <a href="/Functions/custom/objToExc"><h3>对象转Excel<span v-html="icon"></span></h3></a>
-    <a href="/Functions/custom/search"><h3>搜索(支持拼音)<span v-html="icon"></span></h3></a>
-    <a href="/Functions/custom/typeSort"><h3>排序<span v-html="icon"></span></h3></a>
-    <a href="/Functions/custom/fmtTime"><h3>日期格式化<span v-html="icon"></span></h3></a>
-    <a href="/Functions/custom/getCountTime"><h3>倒计时或记录已过去时间<span v-html="icon"></span></h3></a>
+    <a href="/lib-components/Functions/custom/imageOptimizer"><h3>图片压缩<span v-html="icon"></span></h3></a>
+    <a href="/lib-components/Functions/custom/objToExc"><h3>对象转Excel<span v-html="icon"></span></h3></a>
+    <a href="/lib-components/Functions/custom/search"><h3>搜索(支持拼音)<span v-html="icon"></span></h3></a>
+    <a href="/lib-components/Functions/custom/typeSort"><h3>排序<span v-html="icon"></span></h3></a>
+    <a href="/lib-components/Functions/custom/fmtTime"><h3>日期格式化<span v-html="icon"></span></h3></a>
+    <a href="/lib-components/Functions/custom/getCountTime"><h3>倒计时或记录已过去时间<span v-html="icon"></span></h3></a>
   </div>
 </template>
 <script>
