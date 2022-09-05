@@ -70,7 +70,7 @@ $removeEmptyField(testObj)
 ::: slot codes
 
 ```js
-export function removeEmptyField(data, excludes = ["", null, undefined]) {
+export function $removeEmptyField(data, excludes = ["", null, undefined]) {
   let newObj = {};
   if (typeof data === "string") {
     data = JSON.parse(data);

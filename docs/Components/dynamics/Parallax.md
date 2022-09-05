@@ -40,7 +40,7 @@
     <div class="box2" id="parallax-item" x="20" y="10" blur="10"></div>
     <div class="box3" id="parallax-item" x="30" y="15" blur="10"></div>
     <div class="box4" id="parallax-item" x="40" y="20" blur="10"></div>
-  </Dynamics-Parallax-index>
+  </LibParallax>
 </template>
 <style scoped lang="less">
 .LibParallax {
@@ -82,7 +82,7 @@
 </ShowCode>
 </ContainerBox>
 
-<ContainerBox title="经典案例">
+<ContainerBox title="基础用法">
 ::: slot desc
 鼠标进入区域并移动才开始计算坐标，不会一进入就跟随，此时需要从最左{右)边移动到最右(左)边才能完成完整视差动画
 
@@ -108,7 +108,7 @@
     <div class="box2" id="parallax-item" x="20" y="10" blur="10"></div>
     <div class="box3" id="parallax-item" x="30" y="15" blur="10"></div>
     <div class="box4" id="parallax-item" x="40" y="20" blur="10"></div>
-  </Dynamics-Parallax-index>
+  </LibParallax>
 </template>
 <style scoped lang="less">
 .LibParallax {
@@ -152,7 +152,7 @@
 
 <ContainerBox title="经典案例">
 ::: slot desc
-B站`banner`动画
+动画及素材参考：[planets-animated-website](https://github.com/TheDesignMedium/planets-animated-website)
 :::
 <div class="demoBox">
 <Dynamics-Parallax-demo-index-c />
@@ -189,7 +189,7 @@ B站`banner`动画
 
     <!-- 地面 -->
     <img class="foreground" id="parallax-item" x="8" y="8" src="./img/demo-c/foreground.png" alt="" />
-  </Dynamics-Parallax-index>
+  </LibParallax>
 </template>
 <style scoped lang="less">
 .LibParallax {
@@ -294,7 +294,7 @@ B站`banner`动画
 
     <!-- 33娘 -->
     <img id="parallax-item" x="28.6458" blur="0" initBlur="8" src="./img/demo-d/spirit.png" />
-  </Dynamics-Parallax-index>
+  </LibParallax>
 </template>
 <style scoped lang="less">
 .LibParallax {

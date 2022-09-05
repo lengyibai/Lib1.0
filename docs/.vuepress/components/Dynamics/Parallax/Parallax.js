@@ -41,7 +41,9 @@ export default class {
     });
   }
   leaveEvent() {
-    // this.parent.addEventListener("mouseleave", this.initStyle.bind(this));
+    if (this.outinit) {
+      this.parent.addEventListener("mouseleave", this.initStyle.bind(this));
+    }
   }
   moveEvent() {
     const flag = this.reverse ? -1 : 1;
