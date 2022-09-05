@@ -1,0 +1,75 @@
+<script>
+  function removeEmptyField(obj, excludes = ["", null, undefined]) {
+    let newObj = {};
+    if (typeof obj === "string") {
+      obj = JSON.parse(obj);
+    }
+    if (obj instanceof Array) {
+      newObj = [];
+    }
+    if (obj instanceof Object) {
+      for (const attr in obj) {
+        if (!excludes.includes(obj[attr])) {
+          if (obj[attr] instanceof Object) {
+            // 空数组或空对象不加入新对象(去掉[],{})
+            if (JSON.stringify(obj[attr]) === "{}" || JSON.stringify(obj[attr]) === "[]") {
+              continue;
+            }
+            // 属性值为对象,则递归执行去除方法
+            newObj[attr] = removeEmptyField(obj[attr]);
+          } else if (
+            typeof obj[attr] === "string" &&
+            ((obj[attr].indexOf("{") > -1 && obj[attr].indexOf("}") > -1) ||
+              (obj[attr].indexOf("[") > -1 && obj[attr].indexOf("]") > -1))
+          ) {
+            // 属性值为JSON时
+            try {
+              const attrObj = JSON.parse(obj[attr]);
+              if (attrObj instanceof Object) {
+                newObj[attr] = removeEmptyField(attrObj);
+              }
+            } catch (e) {
+              newObj[attr] = obj[attr];
+            }
+          } else {
+            newObj[attr] = obj[attr];
+          }
+        }
+      }
+    }
+    return newObj;
+  }
+
+  const testObj = [
+    {
+      a: "",
+      b: 123,
+      c: null,
+      d: undefined,
+    },
+    {
+      a: "",
+      b: 123,
+      c: null,
+      d: undefined,
+      e: [
+        {
+          a: "",
+          b: 123,
+          c: null,
+          d: undefined,
+        },
+        {
+          e: [],
+          f: [1, 2, 3, "", null],
+          g: {},
+          h: { x: 1, y: "", z: null },
+        },
+      ],
+      f: [1, 2, 3, "", null],
+      g: {},
+      h: { x: 1, y: "", z: null },
+    },
+  ];
+
+</script>

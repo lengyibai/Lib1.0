@@ -83,6 +83,7 @@ const viewImg = {
       status = 0;
 
       constructor(el) {
+        document.body.style.overflow = "hidden";
         this.boxDom = el;
         this.createdMask();
         this.createPic();
@@ -337,6 +338,7 @@ const viewImg = {
 
       /* 关闭 */
       close() {
+        document.body.style.overflow = "auto";
         this.pic.removeEventListener("mousewheel", this.wheel.bind(this));
         this.mask.style.opacity = 0;
         this.tool.style.opacity = 0;
