@@ -18,7 +18,7 @@
 
 <ContainerBox title="基础用法">
 ::: slot desc
-必须加绝对定位才能拖动
+必须加绝对/固定定位才能拖动
 :::
 <div class="demoBox">
 <Directives-DownDrag-index />

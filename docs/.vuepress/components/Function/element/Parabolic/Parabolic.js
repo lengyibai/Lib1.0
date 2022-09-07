@@ -2,10 +2,11 @@ export default class {
   move;
   middle;
   right;
-  runing; //是否处于运动中
+  runing;
   speed;
-  constructor(move, middle, right, speed = 20) {
-    // 通过三个点的坐标获取二元一次方程系数
+  initX;
+  initY;
+  constructor(move, middle, right, speed = 10) {
     this.move = move;
     this.middle = middle;
     this.right = right;
@@ -32,7 +33,12 @@ export default class {
     return all;
   }
 
-  run() {
+  run(e) {
+    const x = e.target.getBoundingClientRect().x;
+    const y = e.target.getBoundingClientRect().y;
+    this.move.style.display = `block`;
+    this.move.style.left = x + "px";
+    this.move.style.top = y + "px";
     return new Promise((resolve, reject) => {
       if (this.runing) {
         reject();
@@ -42,22 +48,28 @@ export default class {
       const move = this.move;
       const middle = this.middle;
       const right = this.right;
-      let arr1 = [move.getBoundingClientRect().x, -move.getBoundingClientRect().y];
-      let arr2 = [middle.getBoundingClientRect().x, -middle.getBoundingClientRect().y];
-      let arr3 = [right.getBoundingClientRect().x, -right.getBoundingClientRect().y];
+
+      var arr1 = [move.offsetLeft, -move.offsetTop];
+      var arr2 = [middle.offsetLeft, -middle.offsetTop];
+      var arr3 = [right.offsetLeft, -right.offsetTop];
 
       const EYC = this.getSolve(arr1, arr2, arr3);
-      //开始定时器前  首先停止原来的定时器
       (function fn() {
-        let newLeft = this.move.offsetLeft + this.speed;
+        let newLeft = move.offsetLeft + this.speed;
         let newTop = EYC[0] * newLeft * newLeft + EYC[1] * newLeft + EYC[2];
         move.style.left = newLeft + "px";
         move.style.top = -newTop + "px";
-        if (newLeft >= arr3[0] && newTop <= arr3[1]) {
+        if (newLeft >= arr3[0]) {
           this.runing = false;
-          move.style.left = arr1[0] + "px";
-          move.style.top = -arr1 + "px";
           resolve();
+
+          this.move.style.transition = `all 0.25s`;
+          this.move.style.opacity = 0;
+          setTimeout(() => {
+            this.move.style.transition = `all 0s`;
+            this.move.style.opacity = 1;
+            this.move.style.display = `none`;
+          }, 250);
           return;
         }
         requestAnimationFrame(fn.bind(this));

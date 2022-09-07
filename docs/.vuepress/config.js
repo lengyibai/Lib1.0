@@ -141,7 +141,6 @@ module.exports = {
             ["dynamics/Parallax", "视差动画"],
             ["dynamics/ScrollParallax", "滚动视差动画"],
             ["dynamics/ScrollInto", "滚动入场动画"],
-            ["dynamics/ScrollFollow", "滚动跟随动画"],
             ["dynamics/DragSort", "拖拽排序"],
             ["dynamics/PdrPul", "上拉加载下拉刷新"],
             ["dynamics/UploadFile", "文件上传"],
@@ -199,9 +198,12 @@ module.exports = {
           ],
         },
         {
-          title: "丰富",
+          title: "元素",
           collapsable: false,
-          children: [["element/Parabolic", "抛物线元素"]],
+          children: [
+            ["element/Parabolic", "抛物线元素"],
+            ["element/ScrollFollow", "滚动跟随动画"],
+          ],
         },
       ],
       "/Directives/": [

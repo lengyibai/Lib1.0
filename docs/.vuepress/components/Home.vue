@@ -12,6 +12,8 @@
     <a href="/lib-components/Directives/ViewImg"><h3>查看图片<span v-html="icon"></span></h3></a>
 
     <h2>热门函数推荐</h2>
+    <a href="/lib-components/Functions/element/Parabolic"><h3>抛物线元素<span v-html="icon"></span></h3></a>
+    <a href="/lib-components/Functions/element/ScrollFollow"><h3>滚动跟随动画<span v-html="icon"></span></h3></a>
     <a href="/lib-components/Functions/custom/imageOptimizer"><h3>图片压缩<span v-html="icon"></span></h3></a>
     <a href="/lib-components/Functions/custom/objToExc"><h3>对象转Excel<span v-html="icon"></span></h3></a>
     <a href="/lib-components/Functions/custom/search"><h3>搜索(支持拼音)<span v-html="icon"></span></h3></a>

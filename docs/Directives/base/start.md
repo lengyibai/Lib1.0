@@ -16,7 +16,7 @@
 
 ## 准备工作
 
-<ContainerBox title="创建文件">
+<ContainerBox title="全局注册">
 ::: slot desc
 
 1. 在项目内创建一个文件夹及文件`src/utils/directives.js`
@@ -58,15 +58,36 @@ import "./utils/directives.js";
 :::
 </ContainerBox>
 
-## 使用
-
-<ContainerBox title="如下">
+<ContainerBox title="局部注册">
 ::: slot desc
+你也可以直接在组件内注册自定义指令
 
 ```vue
-
-<div v-bbb></div>
+<template>
+  <div v-dragFile="dragFile">将文件拖动到此处解析</div>
+</template>
+<script>
+export default {
+  directives: {
+    dragFile: {
+      inserted(el, { value }) {
+        el.addEventListener("dragover", (e) => {
+          e.preventDefault();
+        });
+        el.addEventListener("drop", (e) => {
+          e.preventDefault();
+          let file = [...e.dataTransfer.items].map((item) => {
+            if (item.kind === "file") {
+              return item.getAsFile();
+            }
+          });
+          value(file);
+        });
+      },
+    },
+  }
+};
+</script>
 ```
-
 :::
 </ContainerBox>
