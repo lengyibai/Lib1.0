@@ -6,7 +6,7 @@ export default class {
   speed;
   initX;
   initY;
-  constructor(move, middle, right, speed = 10) {
+  constructor(move, middle, right, speed = 20) {
     this.move = move;
     this.middle = middle;
     this.right = right;

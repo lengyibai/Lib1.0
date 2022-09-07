@@ -48,7 +48,7 @@ export default {
     const move = this.$refs.move;
     const middle = this.$refs.middle;
     const right = this.$refs.right;
-    this.parabolic = new Parabolic(move, middle, right);
+    this.parabolic = new Parabolic(move, middle, right, 20);
   },
   methods: {
     run(e) {
@@ -164,6 +164,7 @@ transition: all 0.25s;
 | move | 被抛元素 | Element |
 | middle | 顶点元素 | Element |
 | right | 终点元素 | Element |
+| speed | 速度，默认`20` | Number |
 
 :::
 </ContainerBox>

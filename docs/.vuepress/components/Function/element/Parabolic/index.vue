@@ -16,7 +16,7 @@ export default {
     const move = this.$refs.move;
     const middle = this.$refs.middle;
     const right = this.$refs.right;
-    this.parabolic = new Parabolic(move, middle, right);
+    this.parabolic = new Parabolic(move, middle, right, 10);
   },
   methods: {
     run(e) {
