@@ -36,9 +36,12 @@ module.exports = {
         },
       },
     ],
-    ["copy-code1", {
-      hint: "复制成功！"
-    }],
+    [
+      "copy-code1",
+      {
+        hint: "复制成功！",
+      },
+    ],
   ],
   themeConfig: {
     smoothScroll: true,
@@ -95,7 +98,8 @@ module.exports = {
       },
     ],
     sidebar: {
-      "/Components/": [{
+      "/Components/": [
+        {
           title: "开发指南",
           collapsable: false,
           children: [
@@ -149,57 +153,62 @@ module.exports = {
           ],
         },
       ],
-      "/Functions/": [{
+      "/Functions/": [
+        {
           title: "基础",
           collapsable: false,
           children: [
-            ["ordinary/type", "返回数据类型"],
-            ["ordinary/isType", "判断数据类型"],
+            ["ordinary/Type", "返回数据类型"],
+            ["ordinary/IsType", "判断数据类型"],
             ["ordinary/Full", "控制全屏显示"],
-            ["ordinary/random", "随机数"],
-            ["ordinary/strDelRep", "字符串去重"],
-            ["ordinary/arrDelRep", "数组深度去重"],
-            ["ordinary/objDelRep", "对象深度去重"],
-            ["ordinary/chromeV", "获取浏览器谷歌内核版本"],
+            ["ordinary/Random", "随机数"],
+            ["ordinary/StrDelRep", "字符串去重"],
+            ["ordinary/ArrDelRep", "数组深度去重"],
+            ["ordinary/ObjDelRep", "对象深度去重"],
+            ["ordinary/ChromeV", "获取浏览器谷歌内核版本"],
           ],
         },
         {
           title: "丰富",
           collapsable: false,
           children: [
-            ["custom/debounce", "防抖"],
-            ["custom/throttle", "节流"],
-            ["custom/fmtNum", "数字每三位加逗号"],
-            ["custom/copy", "复制到剪切板"],
-            ["custom/fmtTime", "日期格式化"],
-            ["custom/timeGreet", "根据时间段问候"],
-            ["custom/getCountTime", "记录已过去时间或倒计时"],
-            ["custom/pinyin", "中文转拼音"],
-            ["custom/search", "正则搜索"],
-            ["custom/urlFileType", "判断是否为指定类型的文件链接"],
-            ["custom/repStr", "全局替换指定字符串"],
-            ["custom/getFileName", "获取文件名"],
-            ["custom/getFileSuf", "获取文件后缀名"],
-            ["custom/typeSort", "排序"],
-            ["custom/fmtByte", "字节格式化"],
-            ["custom/fmtSec", "秒数格式化"],
-            ["custom/potEoPct", "小数、百分比互转"],
-            ["custom/imageOptimizer", "图片压缩"],
-            ["custom/frameInterval", "requestAnimationFrame计时器"],
-            ["custom/objToExc", "对象转Excel"],
-            ["custom/excToObj", "Excel转对象"],
-            ["custom/getPathParams", "获取地址栏参数"],
-            ["custom/deepMearge", "对象深度合并"],
-            ["custom/removeEmptyField", "对象过滤"],
+            ["custom/Debounce", "防抖"],
+            ["custom/Throttle", "节流"],
+            ["custom/FmtNum", "数字每三位加逗号"],
+            ["custom/Copy", "复制到剪切板"],
+            ["custom/FmtTime", "日期格式化"],
+            ["custom/TimeGreet", "根据时间段问候"],
+            ["custom/GetCountTime", "记录已过去时间或倒计时"],
+            ["custom/Pinyin", "中文转拼音"],
+            ["custom/Search", "正则搜索"],
+            ["custom/UrlFileType", "判断是否为指定类型的文件链接"],
+            ["custom/RepStr", "全局替换指定字符串"],
+            ["custom/GetFileName", "获取文件名"],
+            ["custom/GetFileSuf", "获取文件后缀名"],
+            ["custom/TypeSort", "排序"],
+            ["custom/FmtByte", "字节格式化"],
+            ["custom/FmtSec", "秒数格式化"],
+            ["custom/PotEoPct", "小数、百分比互转"],
+            ["custom/ImageOptimizer", "图片压缩"],
+            ["custom/FrameInterval", "requestAnimationFrame计时器"],
+            ["custom/ObjToExc", "对象转Excel"],
+            ["custom/ExcToObj", "Excel转对象"],
+            ["custom/GetPathParams", "获取地址栏参数"],
+            ["custom/DeepMearge", "对象深度合并"],
+            ["custom/RemoveEmptyField", "对象过滤"],
           ],
         },
+        {
+          title: "丰富",
+          collapsable: false,
+          children: [["element/Parabolic", "抛物线元素"]],
+        },
       ],
-      "/Directives/": [{
+      "/Directives/": [
+        {
           title: "开发指南",
           collapsable: false,
-          children: [
-            ["base/start", "快速开始"]
-          ],
+          children: [["base/start", "快速开始"]],
         },
         {
           title: "自定义指令",
@@ -222,28 +231,32 @@ module.exports = {
           ],
         },
       ],
-      "/Styles/": [{
-        title: "基础",
-        collapsable: false,
-        children: [
-          ["textGradient", "文字渐变"],
-          ["cursor", "鼠标样式"],
-          ["ellipsis", "文字溢出省略号"],
-          ["maskCollection", "遮罩层合集"],
-        ],
-      }, ],
-      "/Animates/": [{
-        title: "基础",
-        collapsable: false,
-        children: [
-          ["TV", "电视"],
-          ["Round", "圆"],
-          ["Spin", "旋"],
-          ["Burqas", "掀"],
-          ["Fold", "折"],
-          ["Deploy", "展"],
-        ],
-      }],
+      "/Styles/": [
+        {
+          title: "基础",
+          collapsable: false,
+          children: [
+            ["TextGradient", "文字渐变"],
+            ["Cursor", "鼠标样式"],
+            ["Ellipsis", "文字溢出省略号"],
+            ["MaskCollection", "遮罩层合集"],
+          ],
+        },
+      ],
+      "/Animates/": [
+        {
+          title: "基础",
+          collapsable: false,
+          children: [
+            ["TV", "电视"],
+            ["Round", "圆"],
+            ["Spin", "旋"],
+            ["Burqas", "掀"],
+            ["Fold", "折"],
+            ["Deploy", "展"],
+          ],
+        },
+      ],
     },
   },
 };
