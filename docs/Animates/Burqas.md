@@ -1,6 +1,6 @@
 <ContainerBox title="基础用法">
 :::slot desc
-掀开幕布
+掀开、折叠布
 :::
 <div class="demoBox">
 <Animates-Burqas-index />

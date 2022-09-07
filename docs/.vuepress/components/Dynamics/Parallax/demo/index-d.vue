@@ -2,7 +2,6 @@
   <Dynamics-Parallax-index
     class="LibParallax"
     :follow="false"
-    :outinit="false"
     :reverse="true"
     unit="vw"
   >

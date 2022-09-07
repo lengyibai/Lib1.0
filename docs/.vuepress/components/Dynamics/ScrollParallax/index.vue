@@ -1,9 +1,5 @@
 <template>
-  <div
-    class="LibScrollFollow"
-    ref="LibScrollFollow"
-    @scroll="scrollFollowPlaycallback($event.target.scrollTop)"
-  >
+  <div class="LibScrollParallax" ref="LibScrollParallax" @scroll="ScrollParallaxPlaycallback($event.target.scrollTop)">
     <div class="FollowBox" ref="FollowBox">
       <div class="sticky">
         <div class="a" ref="a"></div>
@@ -19,15 +15,17 @@ export default {
   data() {
     return {
       parent: null,
+      offset: 0,
     };
   },
   mounted() {
-    this.scrollFollowPlaycallback(0); //初始化
+    this.ScrollParallaxPlaycallback(0); //初始化
   },
   methods: {
-    scrollFollowPlaycallback(v) {
+    ScrollParallaxPlaycallback(v) {
+      this.offset = v;
       //#####··········名··········#####//
-      this.scrollFollowPlay(v, this.$refs.d, [
+      this.ScrollParallaxPlay(v, this.$refs.d, [
         [
           0,
           500,
@@ -48,7 +46,8 @@ export default {
         ],
       ]);
       //#####··········房间··········#####//
-      this.scrollFollowPlay(v, this.$refs.a, [
+      this.ScrollParallaxPlay(v, this.$refs.a, [
+        /* 1000-1500：渐显 */
         [
           1000,
           1500,
@@ -60,6 +59,7 @@ export default {
             };
           },
         ],
+        /* 1500-2000：逐渐缩小到两倍大小 */
         [
           1500,
           2000,
@@ -71,6 +71,7 @@ export default {
             };
           },
         ],
+        /* 2000-3000：逐渐缩小到两倍大小，并变得模糊 */
         [
           2000,
           3000,
@@ -82,6 +83,7 @@ export default {
             };
           },
         ],
+        /* 3500-4000：逐渐缩小到两倍大小 */
         [
           3500,
           4000,
@@ -95,7 +97,7 @@ export default {
         ],
       ]);
       //#####··········书··········#####//
-      this.scrollFollowPlay(v, this.$refs.b, [
+      this.ScrollParallaxPlay(v, this.$refs.b, [
         [
           2000,
           3000,
@@ -119,7 +121,7 @@ export default {
       ]);
 
       //#####··········名··········#####//
-      this.scrollFollowPlay(v, this.$refs.c, [
+      this.ScrollParallaxPlay(v, this.$refs.c, [
         [
           4000,
           4250,
@@ -134,7 +136,7 @@ export default {
     },
 
     //#####··········功能函数，不可修改··········#####//
-    scrollFollowPlay(v, el, phase) {
+    ScrollParallaxPlay(v, el, phase) {
       phase.forEach((i, index) => {
         /* 如果滚动坐标超过了当前区间，则不执行，节省性能 */
         if (v <= i[1] && v >= i[0]) {
@@ -166,12 +168,14 @@ export default {
 *::-webkit-scrollbar {
   //display: none;
 }
-.LibScrollFollow {
+.LibScrollParallax {
+  position: relative;
   @height: 50vh;
   width: 100%;
   height: @height;
   overscroll-behavior: contain;
   overflow: hidden auto;
+  background-color: #1a1a1a;
   .FollowBox {
     width: 100%;
     height: calc(4250px + @height);
@@ -204,6 +208,7 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
+        color: #fff;
       }
     }
   }

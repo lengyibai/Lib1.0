@@ -2,6 +2,7 @@
   <Dynamics-Parallax-index
     class="LibParallax"
     unit="vw"
+    :outinit="false"
   >
     <!-- 背景 -->
     <img class="background" id="parallax-item" x="2" y="2" src="./img/demo-c/background.png" alt="" />

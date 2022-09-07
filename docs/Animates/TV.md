@@ -1,6 +1,6 @@
 <ContainerBox title="基础用法">
 :::slot desc
-电视打开和关闭的动画
+电视打开和关闭
 :::
 <div class="demoBox">
 <Animates-TV-index />

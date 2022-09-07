@@ -87,6 +87,8 @@
 鼠标进入区域并移动才开始计算坐标，不会一进入就跟随，此时需要从最左{右)边移动到最右(左)边才能完成完整视差动画
 
 反转`X`轴、`Y`轴
+
+保持离开时的位置（进入后会重置位置）
 :::
 
 <div class="demoBox">
@@ -165,6 +167,7 @@
   <LibParallax
     class="LibParallax"
     unit="vw"
+    :outinit="false"
   >
     <!-- 背景 -->
     <img class="background" id="parallax-item" x="2" y="2" src="./img/demo-c/background.png" alt="" />
@@ -270,7 +273,6 @@ B站`banner`动画
   <LibParallax
     class="LibParallax"
     :follow="false"
-    :outinit="false"
     :reverse="true"
     unit="vw"
   >

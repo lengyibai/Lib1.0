@@ -2,7 +2,9 @@
 
 <ContainerBox title="介绍">
 ::: slot desc
-这里是介绍
+需要`npm i element-ui`
+
+对`element-ui`的`Cascader`级联选择器进行简单封装
 :::
 </ContainerBox>
 

@@ -1,6 +1,6 @@
 <ContainerBox title="基础用法">
 :::slot desc
-折叠展开纸张
+折叠、展开纸张
 :::
 <div class="demoBox">
 <Animates-Fold-index />
