@@ -116,6 +116,7 @@ module.exports = {
             ["statics/CommitBtn", "提交按钮"],
             ["statics/UpdateBtn", "更新按钮"],
             ["statics/DeleteBtn", "删除按钮"],
+            ["statics/StripeBtn", "条纹加载按钮"],
             ["statics/GridLayout", "Grid特色布局"],
             ["statics/GridNumber", "Grid数字模板布局"],
             ["statics/GridLetter", "Grid字母模板布局"],

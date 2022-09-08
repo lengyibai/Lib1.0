@@ -3,7 +3,7 @@
   "short_name": "VuePress",
   "icons": [
     {
-      "src": "https://lengyibai-img-bed.netlify.app/lyb.png",
+      "src": "/lib.png",
       "sizes": "192x192",
       "type": "image/png"
     }

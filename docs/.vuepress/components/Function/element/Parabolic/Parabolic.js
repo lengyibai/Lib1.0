@@ -34,17 +34,17 @@ export default class {
   }
 
   run(e) {
-    const x = e.target.getBoundingClientRect().x;
-    const y = e.target.getBoundingClientRect().y;
-    this.move.style.display = `block`;
-    this.move.style.left = x + "px";
-    this.move.style.top = y + "px";
     return new Promise((resolve, reject) => {
       if (this.runing) {
         reject();
         return;
       }
       this.runing = true;
+      const x = e.target.getBoundingClientRect().x;
+      const y = e.target.getBoundingClientRect().y;
+      this.move.style.display = `block`;
+      this.move.style.left = x + "px";
+      this.move.style.top = y + "px";
       const move = this.move;
       const middle = this.middle;
       const right = this.right;
@@ -60,15 +60,14 @@ export default class {
         move.style.left = newLeft + "px";
         move.style.top = -newTop + "px";
         if (newLeft >= arr3[0]) {
-          this.runing = false;
           resolve();
-
           this.move.style.transition = `all 0.25s`;
           this.move.style.opacity = 0;
           setTimeout(() => {
             this.move.style.transition = `all 0s`;
             this.move.style.opacity = 1;
             this.move.style.display = `none`;
+            this.runing = false;
           }, 250);
           return;
         }
