@@ -1,5 +1,5 @@
 <template>
-  <div class="LibScrollParallax" ref="LibScrollParallax" @scroll="ScrollParallaxPlaycallback($event.target.scrollTop)">
+  <div class="LibScrollParallax" ref="LibScrollParallax" @scroll="ScrollParallaxcallback($event.target.scrollTop)">
     <div class="FollowBox" ref="FollowBox">
       <div class="sticky">
         <div class="a" ref="a"></div>
@@ -11,21 +11,16 @@
   </div>
 </template>
 <script>
+import ScrollParallax from "./ScrollParallax.js";
 export default {
-  data() {
-    return {
-      parent: null,
-      offset: 0,
-    };
-  },
   mounted() {
-    this.ScrollParallaxPlaycallback(0); //初始化
+    this.ScrollParallaxcallback(0); //初始化
   },
   methods: {
-    ScrollParallaxPlaycallback(v) {
+    ScrollParallaxcallback(v) {
       this.offset = v;
       //#####··········名··········#####//
-      this.ScrollParallaxPlay(v, this.$refs.d, [
+      ScrollParallax(v, this.$refs.d, [
         [
           0,
           500,
@@ -46,7 +41,7 @@ export default {
         ],
       ]);
       //#####··········房间··········#####//
-      this.ScrollParallaxPlay(v, this.$refs.a, [
+      ScrollParallax(v, this.$refs.a, [
         /* 1000-1500：渐显 */
         [
           1000,
@@ -97,7 +92,7 @@ export default {
         ],
       ]);
       //#####··········书··········#####//
-      this.ScrollParallaxPlay(v, this.$refs.b, [
+      ScrollParallax(v, this.$refs.b, [
         [
           2000,
           3000,
@@ -121,7 +116,7 @@ export default {
       ]);
 
       //#####··········名··········#####//
-      this.ScrollParallaxPlay(v, this.$refs.c, [
+      ScrollParallax(v, this.$refs.c, [
         [
           4000,
           4250,
@@ -133,30 +128,6 @@ export default {
           },
         ],
       ]);
-    },
-
-    //#####··········功能函数，不可修改··········#####//
-    ScrollParallaxPlay(v, el, phase) {
-      phase.forEach((i, index) => {
-        /* 如果滚动坐标超过了当前区间，则不执行，节省性能 */
-        if (v <= i[1] && v >= i[0]) {
-          let p = 0;
-          if (v >= i[0]) {
-            p = (v - i[0]) / (i[1] - i[0]);
-            Object.keys(i[2](p)).forEach((_i) => {
-              el.style[_i] = i[2](p)[_i];
-            });
-          }
-        } else if (v > i[1]) {
-          Object.keys(i[2](1)).forEach((_i) => {
-            el.style[_i] = i[2](1)[_i];
-          });
-        } else if (i[0] > v && index === 0) {
-          Object.keys(i[2](0)).forEach((_i) => {
-            el.style[_i] = i[2](0)[_i];
-          });
-        }
-      });
     },
   },
 };

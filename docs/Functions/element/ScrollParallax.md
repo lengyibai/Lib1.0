@@ -7,15 +7,13 @@
 原理：获取整个滚动盒子的高度，计算出鼠标滚完整个盒子的百分比，通过百分比来控制动画，
 
 拓展了一下，可以设置某个区间，当滚动到这个区间，则开始计算这个区间的百分比，由此可控制这个区间的元素动画
-
-你甚至可以利用回调参数对视频进行滚动播放
 :::
 </ContainerBox>
 
-<ContainerBox title="下载并引入">
+<ContainerBox title="下载所需文件">
 ::: slot desc
 
-很抱歉，这不是一个组件，仅供参考代码进行使用
+[ScrollFollow.js](https://gitee.com/lengyibai/component-package/raw/master/ScrollParallax.js)
 
 :::
 </ContainerBox>
@@ -27,7 +25,7 @@
 在下面缓慢滚动
 :::
 <div class="demoBox">
-<Dynamics-ScrollParallax-index />
+<Function-element-ScrollParallax-index />
 </div>
 
 <ShowCode>
@@ -187,9 +185,11 @@ export default {
         }
       });
     },
-  },
+
+},
 };
 </script>
+
 <style scoped lang="less">
 * {
   transition: all 0.25s ease-out;
@@ -252,9 +252,10 @@ export default {
 
 | 函数                     | 说明                                                         |
 | ------------------------ | ------------------------------------------------------------ |
-| ScrollParallaxPlaycallback | 滚动实时触发，传递的是当前父元素实时滚动的坐标               |
-| ScrollParallaxPlay         | 第一参数：传递滚动坐标<br />第二参数：跟随滚动播放动画的元素<br />第三参数：区间，一共有三个数组元素，一二元素为滚动到某个范围触发，产生该区间的滚动进度，第三元素为触发函数，样式写在此处，回调参数为当前区间的`0-1`的滚动进度<br />注：在某个区间内使用的样式，在其他区间也必须使用，避免区间之间的样式污染，详细请看该函数的代码 |
+| ScrollParallaxcallback   | 滚动实时触发，传递的是当前父元素实时滚动的坐标               |
+| ScrollParallax           | 第一参数：传递滚动坐标<br />第二参数：跟随滚动播放动画的元素<br />第三参数：区间，一共有三个数组元素，一二元素为滚动到某个范围触发，产生该区间的滚动进度，第三元素为触发函数，样式写在此处，回调参数为当前区间的`0-1`的滚动进度<br />注：在某个区间内使用的样式，在其他区间也必须使用，避免区间之间的样式污染，详细请看该函数的代码 |
 
 :::
 </ContainerBox>
 
+```

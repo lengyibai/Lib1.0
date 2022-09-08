@@ -35,7 +35,7 @@
   width: 25vw;
   height: 25vw;
   overflow: hidden;
-  background: url("/lib-components/lyb.png") no-repeat center center;
+  background: url("/lib-components/lib.png") no-repeat center center;
   background-size: cover;
 }
 </style>

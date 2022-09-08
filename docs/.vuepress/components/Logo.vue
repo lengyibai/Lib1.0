@@ -1,6 +1,6 @@
 <template>
   <div class="Logo">
-    <img src="/lib-components/lyb.png" alt="lyb" />
+    <img src="/lib-components/lib.png" alt="lyb" />
     <div class="name">Lib</div>
     <div class="desc">轻量、PC端 Vue 自用组件库</div>
   </div>

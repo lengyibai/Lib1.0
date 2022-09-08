@@ -1,6 +1,6 @@
 <template>
   <div class="ViewImg" v-viewImg>
-    <img src="/lib-components/lyb.png" alt="" />
+    <img src="/lib-components/lib.png" alt="" />
     <img src="/lib-components/cat.png" alt="" />
   </div>
 </template>

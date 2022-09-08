@@ -1,5 +1,5 @@
 module.exports = {
-  title: "冷弋白", //显示在左上角的网页名称以及首页在浏览器标签显示的title名称
+  title: "Lib", //显示在左上角的网页名称以及首页在浏览器标签显示的title名称
   description: "Vue2轻量级组件库", //meta 中的描述文字，用于SEO
   base: "/lib-components/",
   dest: "./dist",
@@ -11,7 +11,7 @@ module.exports = {
       "link",
       {
         rel: "icon",
-        href: "/lyb.png",
+        href: "/lib.png",
       },
     ],
   ],
@@ -45,7 +45,7 @@ module.exports = {
   ],
   themeConfig: {
     smoothScroll: true,
-    logo: "/lyb.png",
+    logo: "/lib.png",
     lastUpdated: "最后修改时间",
     nav: [
       /* {
@@ -139,7 +139,6 @@ module.exports = {
           collapsable: false,
           children: [
             ["dynamics/Parallax", "视差动画"],
-            ["dynamics/ScrollParallax", "滚动视差动画"],
             ["dynamics/ScrollInto", "滚动入场动画"],
             ["dynamics/DragSort", "拖拽排序"],
             ["dynamics/PdrPul", "上拉加载下拉刷新"],
@@ -202,6 +201,7 @@ module.exports = {
           collapsable: false,
           children: [
             ["element/Parabolic", "抛物线元素"],
+            ["element/ScrollParallax", "滚动视差动画"],
             ["element/ScrollFollow", "滚动跟随动画"],
           ],
         },
