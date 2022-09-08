@@ -12,8 +12,8 @@
 <style scoped lang="less">
 .LibParallax {
   position: relative;
-  width: 100vw;
-  height: 75vh;
+  width: 100%;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
