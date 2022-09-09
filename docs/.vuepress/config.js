@@ -113,6 +113,7 @@ module.exports = {
           children: [
             ["statics/Icon", "图标"],
             ["statics/Svg", "SVG变色图标"],
+            ["statics/TriggerRay", "放射单击效果"],
             ["statics/CommitBtn", "提交按钮"],
             ["statics/UpdateBtn", "更新按钮"],
             ["statics/DeleteBtn", "删除按钮"],

@@ -10,6 +10,7 @@
 ::: slot desc
 
 [下载组件包](https://gitee.com/lengyibai/component-package/raw/master/LibStripeBtn.zip)
+
 引入参考 [引入组件](/Components/Base/start.html#引入组件)
 
 :::
@@ -19,7 +20,7 @@
 
 <ContainerBox title="基础用法">
 ::: slot desc
-限制只能点击一次，目前暂无更新失败提示，以及支持重新点击更新的功能
+在移动端部分浏览器可能会出现锯齿，PC端正常，暂不解决
 :::
 
 <div class="demoBox">

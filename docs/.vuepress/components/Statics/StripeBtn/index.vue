@@ -77,7 +77,7 @@ export default {
     top: 0;
     width: 100%;
     height: 100%;
-    background-size: calc(var(--height) - 0.7em) var(--height);
+    background-size: calc(var(--height) - 0.625em) var(--height);
     background-position: 0 0;
     animation: grow 0.5s linear infinite;
     opacity: 0.35;
