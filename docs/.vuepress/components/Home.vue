@@ -2,9 +2,8 @@
   <div class="Home">
     <h2>热门组件推荐</h2>
     <a href="/lib-components/Components/dynamics/Parallax"><h3>视差动画<span v-html="icon"></span></h3></a>
-    <a href="/lib-components/Components/dynamics/ScrollParallax"><h3>滚动视差动画<span v-html="icon"></span></h3></a>
     <a href="/lib-components/Components/dynamics/ScrollInto"><h3>滚动入场动画<span v-html="icon"></span></h3></a>
-    <a href="/lib-components/Components/dynamics/ScrollFollow"><h3>滚动跟随动画<span v-html="icon"></span></h3></a>
+    <a href="/lib-components/Components/dynamics/Waterfall"><h3>瀑布流布局<span v-html="icon"></span></h3></a>
 
     <h2>热门指令推荐</h2>
     <a href="/lib-components/Directives/WaveDiffuse"><h3>水波动画<span v-html="icon"></span></h3></a>

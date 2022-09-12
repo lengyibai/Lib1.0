@@ -142,6 +142,7 @@ module.exports = {
           children: [
             ["dynamics/Parallax", "视差动画"],
             ["dynamics/ScrollInto", "滚动入场动画"],
+            ["dynamics/Waterfall", "瀑布流布局"],
             ["dynamics/DragSort", "拖拽排序"],
             ["dynamics/PdrPul", "上拉加载下拉刷新"],
             ["dynamics/UploadFile", "文件上传"],
@@ -150,7 +151,6 @@ module.exports = {
             ["dynamics/ValidationCountdown", "获取验证码按钮"],
             ["dynamics/SelectAddress", "省市区"],
             ["dynamics/RichText", "富文本编辑器"],
-            ["dynamics/Waterfall", "瀑布流布局"],
           ],
         },
       ],
