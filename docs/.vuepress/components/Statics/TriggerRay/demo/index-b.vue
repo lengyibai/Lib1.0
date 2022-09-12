@@ -36,7 +36,7 @@ export default {
       }, 150);
       setTimeout(() => {
         this.active = false;
-      }, 1000);
+      }, 500);
     },
   },
 };
@@ -46,13 +46,16 @@ export default {
   position: relative;
   width: 100%;
   height: 30vw;
+  min-height: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
   i {
     display: inline-block;
     width: 10vw;
+    min-width: 125px;
     height: 10vw;
+    min-height: 125px;
     z-index: 1;
   }
   .scale {

@@ -93,20 +93,20 @@ export default {
       width: 0;
       height: 0;
       border: 0 solid var(--color);
-      opacity: 0.5;
+      opacity: 0.75;
     }
 
     35% {
-      width: calc(200px * var(--size));
-      height: calc(200px * var(--size));
-      border: calc(100px * var(--size)) solid var(--color);
-      opacity: 0.5;
+      width: calc(100px * var(--size));
+      height: calc(100px * var(--size));
+      border: calc(50px * var(--size)) solid var(--color);
+      opacity: 0.75;
     }
     100% {
-      width: calc(250px * var(--size));
-      height: calc(250px * var(--size));
+      width: calc(200px * var(--size));
+      height: calc(200px * var(--size));
       border: 0 solid var(--color);
-      opacity: 0;
+      opacity: 0.75;
     }
   }
 
