@@ -86,7 +86,7 @@ module.exports = {
       },
       {
         text: "CSS样式库",
-        link: "/Styles/textGradient",
+        link: "/Styles/Gradient",
       },
       {
         text: "Vue动画库",
