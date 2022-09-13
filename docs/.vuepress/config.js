@@ -125,6 +125,7 @@ module.exports = {
             ["statics/Mask", "蒙版"],
             ["statics/Loading", "loading"],
             ["statics/Iframe", "iframe"],
+            ["statics/PhoneTip", "移动端提示横屏浏览"],
             ["statics/StripeBtn", "条纹加载按钮"],
             ["statics/TriggerRay", "放射单击效果"],
             ["statics/FullScroll", "全屏滚动"],
@@ -167,6 +168,7 @@ module.exports = {
             ["ordinary/ArrDelRep", "数组深度去重"],
             ["ordinary/ObjDelRep", "对象深度去重"],
             ["ordinary/ChromeV", "获取浏览器谷歌内核版本"],
+            ["ordinary/IsPhone", "判断是否为移动端"],
           ],
         },
         {
