@@ -20,10 +20,16 @@
 
 <ContainerBox title="基础用法">
 ::: slot desc
-放射背景自适应大小，无需担心适配问题
+放射背景自适应大小，无需担心尺寸适配问题
+
+
+
+动画时长有`750ms`，射线内的图标可根据射线绽开进行卡点调试，参考`demo`源码
+
 :::
+
 <div class="demoBox">
-<Statics-TriggerRay-demo-index-a />
+<TriggerRay />
 </div>
 
 <ShowCode>
@@ -124,7 +130,7 @@ transform: scale(1);
 ```vue
 <template>
   <div class="Test">
-    <Statics-TriggerRay-index v-model="play" color="#3498db">
+    <TriggerRay v-model="play" color="#3498db">
       <i
         v-html="icon"
         @click="fn"
@@ -133,7 +139,7 @@ transform: scale(1);
           scale: active,
         }"
       ></i>
-    </Statics-TriggerRay-index>
+    </TriggerRay>
   </div>
 </template>
 <script>
@@ -210,6 +216,7 @@ export default {
 
 | 参数  | 说明     | 类型   | 默认值 |
 | ----- | -------- | ------ | ------ |
+| v-model | 控制射线动画播放，整个过程`750ms`<br />动画播放结束后，自动为`false` | Boolean | false |
 | color | 放射颜色 | String | red   |
 
 :::
