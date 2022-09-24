@@ -22,14 +22,12 @@
 ::: slot desc
 放射背景自适应大小，无需担心尺寸适配问题
 
-
-
 动画时长有`750ms`，射线内的图标可根据射线绽开进行卡点调试，参考`demo`源码
 
 :::
 
 <div class="demoBox">
-<TriggerRay />
+<Statics-TriggerRay-demo-index-a />
 </div>
 
 <ShowCode>
