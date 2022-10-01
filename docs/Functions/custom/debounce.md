@@ -10,16 +10,13 @@
 <ShowCode>
 ::: slot codes
 ```js
-export function $debounceDelay(fn, delay) {
-  return function (args) {
-    let that = this;
-    let _args = args;
-    clearTimeout(fn.id);
-    fn.id = setTimeout(function () {
-      fn.call(that, _args);
-    }, delay);
+export function $debounceDelay(() => {
+  let timer = null;
+  return (callback, wait = 800) => {
+    timer && clearTimeout(timer);
+    timer = setTimeout(callback, wait);
   };
-}
+})();
 ```
 :::
 </ShowCode>
@@ -29,9 +26,9 @@ export function $debounceDelay(fn, delay) {
 <ShowCode>
 ::: slot codes
 ```js
-export function $debounceInstant(fn, delay) {
+export function $debounceInstant(() => {
   let timer;
-  return function () {
+  return function (fn, delay) {
     let context = this;
     let args = arguments;
     if (timer) clearTimeout(timer);
@@ -41,7 +38,7 @@ export function $debounceInstant(fn, delay) {
     }, delay);
     if (callNow) fn.apply(context, args);
   };
-}
+})();
 ```
 :::
 </ShowCode>
@@ -59,50 +56,4 @@ setInterval(
   100,
 );
 ```
-</ContainerBox>
-
-<ContainerBox title="使用方法">
-::: slot desc
-在函数内使用
-:::
-```js
-const lib = $debounce(fn, 1000);
-setInterval(() => {
-  lib();
-}, 100);
-```
-</ContainerBox>
-
-<ContainerBox title="使用方法">
-::: slot desc
-在`Vue`内使用
-:::
-```js
-export default {
-  data() {
-    return {
-      lib: null,
-    };
-  },
-  created() {
-    lib = $throttle(function () {}.bind(this), 250);
-  },
-  mounted() {
-    setInterval(() => {
-      lib();
-    }, 100);
-  },
-};
-```
-</ContainerBox>
-
-<ContainerBox title="Params">
-::: slot desc
-
-| 参数  | 说明     | 类型     |
-| ----- | -------- | -------- |
-| fn    | 回调函数 | Function |
-| delay | 时间     | Number   |
-
-:::
 </ContainerBox>

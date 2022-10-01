@@ -178,6 +178,7 @@ module.exports = {
             ["custom/Debounce", "防抖"],
             ["custom/Throttle", "节流"],
             ["custom/FmtNum", "数字每三位加逗号"],
+            ["custom/HideMobile", "手机号脱敏处理"],
             ["custom/Copy", "复制到剪切板"],
             ["custom/FmtTime", "日期格式化"],
             ["custom/TimeGreet", "根据时间段问候"],
@@ -200,6 +201,7 @@ module.exports = {
             ["custom/GetPathParams", "获取地址栏参数"],
             ["custom/DeepMearge", "对象深度合并"],
             ["custom/RemoveEmptyField", "对象过滤"],
+            ["custom/DeepCopy", "深拷贝"],
           ],
         },
         {
@@ -209,6 +211,7 @@ module.exports = {
             ["element/Parabolic", "抛物线元素"],
             ["element/ScrollParallax", "滚动视差动画"],
             ["element/ScrollFollow", "滚动跟随动画"],
+            ["element/ScrollIntoView", "滚动到元素位置"],
           ],
         },
       ],

@@ -11,9 +11,9 @@
 <ShowCode>
 ::: slot codes
 ```js
-export function $throttleDelay(fn, delay) {
+export function $throttleDelay(() => {
   let timer;
-  return function () {
+  return function (fn, delay) {
     if (!timer) {
       timer = setTimeout(() => {
         timer = null;
@@ -21,7 +21,7 @@ export function $throttleDelay(fn, delay) {
       }, delay);
     }
   };
-}
+})();
 ```
 :::
 </ShowCode>
@@ -31,16 +31,16 @@ export function $throttleDelay(fn, delay) {
 <ShowCode>
 ::: slot codes
 ```js
-export function $throttleInstant(fn, delay) {
-  let baseTime = 0;
-  return function () {
-    const currentTime = Date.now();
-    if (baseTime + delay < currentTime) {
-      fn.apply(this, arguments);
-      baseTime = currentTime;
+export function $throttleInstant(() => {
+  let last = 0;
+  return (callback, wait = 800) => {
+    let now = +new Date();
+    if (now - last > wait) {
+      callback();
+      last = now;
     }
-  }
-}
+  };
+})();
 ```
 :::
 </ShowCode>
